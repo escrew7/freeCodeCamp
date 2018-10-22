@@ -1,0 +1,29 @@
+body {
+  background-color:grey;
+  font-family: 'Baloo Tamma', cursive;
+}
+.header {
+  font-size:4em;
+  color:black;
+}
+
+.results {
+  font-size:2em;
+  color:black;
+  margin:0.5em;
+}
+
+#tempChange {
+  text-decoration:none;
+}
+
+#temp2 {
+  display:none;
+}
+
+.app {
+  border:20px solid black;
+  border-radius:70px;
+  background-color: white;
+  margin-top:10%;
+}

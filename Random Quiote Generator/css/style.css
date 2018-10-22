@@ -1,0 +1,17 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+button {
+  margin :10px;
+}
+
+#tweetTastic {
+    margin :10px;
+}
+
+#party {
+  padding:5px;
+  margin-top :20px;
+  border-radius:5px;
+}

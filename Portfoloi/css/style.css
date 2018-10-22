@@ -1,0 +1,166 @@
+body {
+  font-family: "Courier New", Courier;
+  height:100%;
+}
+
+h2{
+  text-decoration: underline;
+  font-size:3em;
+  padding:30px;
+}
+
+.navImage{
+  width: 100px;
+  margin-top: -5px;
+  position:fixed;
+  top:20px;
+  left:20px;
+  z-index:999;
+}
+.navbar-transparent .navbar-nav > li > a {
+    color: #000000;
+}
+
+.navbar-transparent .navbar-nav > li > a:hover {
+  background-color: #939799;
+  color: #ffffff;
+}
+
+.navbar-toggle, .navbar-toggle span {
+  color: black;
+  border: 1px solid black;
+  top:15px;
+}
+
+.navbar-transparent{
+    font-size: 2em;
+    color: #000000;
+    padding-right: 20px;
+}
+
+.nav {
+  padding-top: 15px;
+}
+
+.page {
+  min-height:100vh;
+}
+
+.vcenter {
+  position: relative;
+}
+
+.kiddo,
+.imCenter {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+}
+
+.Opening {
+    max-height: 120%;
+    max-width: 120%;
+}
+
+.fader{
+  display:none;
+}
+
+.face {
+  max-width:200px;
+  margin: auto;
+  margin-top:10%;
+}
+
+.closing {
+  width:100px;
+  margin:40px;
+}
+
+.wtext {
+  font-size:1.2em;
+  color: #00000;
+}
+
+.links {
+  color:#00000;
+}
+
+.anchor {
+  padding-top:50px;
+  margin-top:-50px;
+}
+
+.back {
+  display: none;
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  z-index:999;
+  color: black;
+}
+
+.des  {
+  padding:2px;
+}
+
+.img{
+  margin: 0 auto;
+}
+
+.descr {
+  position:absolute;
+  height:100%;
+  width:100%;
+  opacity:0;
+  font-size:1.6em;
+  color:#FFFFFF;
+}
+
+.descr h3{
+  font-size:1.8em;
+}
+
+
+.subDescr h3{
+  color:black;
+  font-size:2.5em;
+  
+}
+
+.contDescr h3 a {
+  color:black;
+}
+
+i {
+  border-radius:10px;
+  box-shadow: 4px 4px 4px 1px #ccc;
+}
+
+i:hover {
+  color:black;
+}
+
+.descr:hover {
+  position:absolute;
+  height:100%;
+  width:100%;
+  opacity:0.85;
+  background-color: #939799;
+  text-align:center;
+  border-radius:5px;
+}
+
+@media (max-width:770px) {
+  .navImage{
+    width: 60px;
+  }
+  .subDescr{
+  text-align:center;
+}
+  }

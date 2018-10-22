@@ -1,0 +1,287 @@
+class DrumPads extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      display: "Welcome!"
+    };
+    this.playSound = this.playSound.bind(this);
+    this.handleKeyPress = this.handleKeyPress.bind(this);
+  }
+  componentDidMount() {
+    document.addEventListener("keydown", this.handleKeyPress);
+  }
+  componentWillUnmount() {
+    document.removeEventListener("keydown", this.handleKeyPress);
+  }
+
+  playSound(sound) {
+    switch (sound) {
+      case "a":
+        document.getElementById("Q").play();
+        this.setState({ display: "Cymbal 1" });
+        break;
+      case "b":
+        document.getElementById("W").play();
+        this.setState({ display: "Cymbal 2" });
+        break;
+      case "c":
+        document.getElementById("E").play();
+        this.setState({ display: "High Hat" });
+        break;
+      case "d":
+        document.getElementById("A").play();
+        this.setState({ display: "Ride" });
+        break;
+      case "e":
+        document.getElementById("S").play();
+        this.setState({ display: "Tom 1" });
+        break;
+      case "f":
+        document.getElementById("D").play();
+        this.setState({ display: "Tom 2" });
+        break;
+      case "g":
+        document.getElementById("Z").play();
+        this.setState({ display: "Tom 3" });
+        break;
+      case "h":
+        document.getElementById("X").play();
+        this.setState({ display: "Snare" });
+        break;
+      case "i":
+        document.getElementById("C").play();
+        this.setState({ display: "Cow Bell" });
+        break;
+      case "j":
+        document.getElementById("K").play();
+        this.setState({ display: "Kick" });
+        break;
+    }
+  }
+
+  handleKeyPress(event) {
+    switch (event.keyCode) {
+      case 81:
+        document.getElementById("Q").play();
+        this.setState({ display: "Cymbal 1" });
+        break;
+      case 87:
+        document.getElementById("W").play();
+        this.setState({ display: "Cymbal 2" });
+        break;
+      case 69:
+        document.getElementById("E").play();
+        this.setState({ display: "High Hat" });
+        break;
+      case 65:
+        document.getElementById("A").play();
+        this.setState({ display: "Ride" });
+        break;
+      case 83:
+        document.getElementById("S").play();
+        this.setState({ display: "Tom 1" });
+        break;
+      case 68:
+        document.getElementById("D").play();
+        this.setState({ display: "Tom 2" });
+        break;
+      case 90:
+        document.getElementById("Z").play();
+        this.setState({ display: "Tom 3" });
+        break;
+      case 88:
+        document.getElementById("X").play();
+        this.setState({ display: "Snare" });
+        break;
+      case 67:
+        document.getElementById("C").play();
+        this.setState({ display: "Cow Bell" });
+        break;
+      case 75:
+        document.getElementById("K").play();
+        this.setState({ display: "Kick" });
+        break;
+    }
+  }
+
+  render() {
+    return (
+      <div id="case">
+        <h1 id='title'>RUIDIMASTER 4000</h1>
+        <div id="caseLeft">
+          <div className="box-row">
+            <button
+              id="buttQ"
+              className="drum-pad"
+              type="button"
+              value="a"
+              onClick={e => this.playSound("a", e)}
+            >
+              <audio
+                id="Q"
+                className="clip"
+                src="http://sampleswap.org/samples-ghost/DRUMS%20and%20SINGLE%20HITS/crashes/92[kb]909-bright-crash.aif.mp3"
+              />Cy1
+            </button>
+            <button
+              id="buttW"
+              className="drum-pad"
+              type="button"
+              value="a"
+              onClick={e => this.playSound("b", e)}
+            >
+              <audio
+                id="W"
+                className="clip"
+                src="http://sampleswap.org/samples-ghost/DRUMS%20and%20SINGLE%20HITS/crashes/79[kb]normcrash.aif.mp3"
+              />
+              Cy2
+            </button>
+            <button
+              id="buttE"
+              className="drum-pad"
+              type="button"
+              value="a"
+              onClick={e => this.playSound("c", e)}
+            >
+              <audio
+                id="E"
+                className="clip"
+                src="http://sampleswap.org/samples-ghost/%20MAY%202014%20LATEST%20ADDITIONS/DRUMS%20(FULL%20KITS)/Pearl%20Real%20Kit/76[kb]pearlkit-hihat.wav.mp3"
+              />HH
+            </button>
+          </div>
+          <div className="box-row">
+            <button
+              id="buttA"
+              className="drum-pad"
+              type="button"
+              value="a"
+              onClick={e => this.playSound("d", e)}
+            >
+              <audio
+                id="A"
+                className="clip"
+                src="http://sampleswap.org/samples-ghost/DRUMS%20and%20SINGLE%20HITS/rides/81[kb]909-bright-ride.aif.mp3"
+              />{" "}
+              Rd
+            </button>
+            <button
+              id="buttS"
+              className="drum-pad"
+              type="button"
+              value="a"
+              onClick={e => this.playSound("e", e)}
+            >
+              <audio
+                id="S"
+                className="clip"
+                src="http://sampleswap.org/samples-ghost/%20MAY%202014%20LATEST%20ADDITIONS/DRUMS%20(FULL%20KITS)/Pearl%20Real%20Kit/304[kb]pearlkit-hitom1.wav.mp3"
+              />Tm1
+            </button>
+            <button
+              id="buttD"
+              className="drum-pad"
+              type="button"
+              value="a"
+              onClick={e => this.playSound("f", e)}
+            >
+              <audio
+                id="D"
+                className="clip"
+                src="http://sampleswap.org/samples-ghost/%20MAY%202014%20LATEST%20ADDITIONS/DRUMS%20(FULL%20KITS)/Pearl%20Real%20Kit/304[kb]pearlkit-hitom2.wav.mp3"
+              />Tm2
+            </button>
+          </div>
+          <div className="box-row">
+            <button
+              id="buttZ"
+              className="drum-pad"
+              type="button"
+              value="a"
+              onClick={e => this.playSound("g", e)}
+            >
+              <audio
+                id="Z"
+                className="clip"
+                src="http://sampleswap.org/samples-ghost/%20MAY%202014%20LATEST%20ADDITIONS/DRUMS%20(FULL%20KITS)/Pearl%20Real%20Kit/430[kb]pearlkit-lowtom1.wav.mp3"
+              />Tm3
+            </button>
+            <button
+              id="buttX"
+              className="drum-pad"
+              type="button"
+              value="a"
+              onClick={e => this.playSound("h", e)}
+            >
+              <audio
+                id="X"
+                className="clip"
+                src="http://sampleswap.org/samples-ghost/DRUMS%20and%20SINGLE%20HITS/snares/57[kb]acoustic_snare.aif.mp3"
+              />Snr
+            </button>
+            <button
+              id="buttC"
+              className="drum-pad"
+              type="button"
+              value="a"
+              onClick={e => this.playSound("i", e)}
+            >
+              <audio
+                id="C"
+                className="clip"
+                src="http://sampleswap.org/samples-ghost/DRUMS%20and%20SINGLE%20HITS/percussion%20western%20and%20latin/13[kb]locow.aif.mp3"
+              />CB
+            </button>
+          </div>
+        </div>
+        <div id="caseRight">
+          <Display props={this.state.display} />
+          <button
+            id="buttKick"
+            className="drum-pad"
+            type="button"
+            value="a"
+            onClick={e => this.playSound("j", e)}
+          >
+            <audio
+              id="K"
+              className="clip"
+              src="http://sampleswap.org/samples-ghost/DRUMS%20(FULL%20KITS)/Pearl%20Real%20Kit/107[kb]pearlkit-kick.wav.mp3"
+            />
+            Kick
+          </button>
+        </div>
+      </div>
+    );
+  }
+}
+
+class Display extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <div id="display">
+        <p className="disp">{this.props.props}</p>
+      </div>
+    );
+  }
+}
+
+class DrumMachine extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <div id="drum-machine">
+        
+        <DrumPads />
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(<DrumMachine />, document.getElementById("root"));

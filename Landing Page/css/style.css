@@ -1,0 +1,173 @@
+body {
+  background-color: #f2f2f2;
+}
+
+#header { 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color:#f2f2f2;
+}
+
+.hBird {
+  margin: 5px;
+}
+
+#nav-bar {
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+#nav-bar a {
+  text-decoration: none;
+  color: black;
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+button {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 3px;
+}
+
+@media (max-width: 599px){
+  #header { 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  #nav-bar{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #container {
+    margin-top: 150px;
+  }
+}
+
+#form button {
+  margin: 5px;
+}
+
+#features {
+  text-align: left;
+  margin-top: 60px;
+}
+
+#feature {
+  display: flex;
+  flex-direction: row;
+}
+
+#feature h3{
+  margin-bottom: -10px;
+}
+
+.bull {
+  margin-top: 22px;
+  margin-right: 20px;
+}
+
+#video {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+iframe {
+  width:545px;
+  height:300px;
+}
+
+@media (max-width: 545px){
+
+  iframe {
+    width: 100%;
+  }
+  
+  .bull {
+    display: none;
+  }
+  
+  #feature {
+    text-align: center;
+  }
+}
+
+#content {
+  width: 600px;
+  text-align: center;
+}
+
+#products {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+#P1 {
+  width: 30%;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 5px
+}
+
+#P1 button {
+  margin: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+@media (max-width: 599px){
+  #products {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #P1 {
+    width: 249px;
+    margin-bottom: 10px;
+  }
+}
+
+footer {
+  text-align: right;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+  margin-bottom: -15px;
+}
+
+#foot {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#foot p{
+  margin: 5px;
+}

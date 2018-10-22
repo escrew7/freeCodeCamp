@@ -1,0 +1,63 @@
+body {
+  background-color: grey;
+  font-family: arial;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  
+}
+
+h1 {
+  font-size: 35px;
+  text-decoration: underline;
+}
+
+form {
+  border: 3px solid black;
+  border-radius: 5px;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  width: 700px;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.discription {
+  text-align: right;
+  width: 48%;
+}
+
+.entry {
+  width: 48%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#dropdown {
+  height: 22px;
+}
+
+.sub {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+#lettuce {
+  text-align: center;
+}
+
+#submit {
+  width: 100px;
+}

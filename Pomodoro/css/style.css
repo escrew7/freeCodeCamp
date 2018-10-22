@@ -1,0 +1,188 @@
+body{
+  background: black;
+}
+
+.back{
+  z-index: -1;
+  position: absolute;
+  width: 600px;
+  top: 50px;
+  margin:0 auto;
+  right:0;
+  left:0;
+}
+
+h1{
+  text-align: center;
+  color: white;
+  margin-top:170px;
+  font-family: 'Baumans', cursive;
+  font-size: 50px;
+}
+
+.time {
+  margin: 0 auto;
+  width: 500px;
+  background: green;
+  height: 50px;
+  border-radius: 10px;
+  border: 10px solid white
+}
+
+.fill {
+  width: 0px;
+  height: 50px;
+  background: black;
+}
+
+.what{
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  width: 250px;
+  margin:0 auto;
+  top:275px;
+  right:0;
+  left:0;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.descr{
+  color: white;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  text-decoration: underline;
+  font-weight:bold;
+}
+
+.inputswrap{
+  margin-bottom: 75px;
+  
+}
+
+.inputs{
+  text-align: center;
+}
+
+.puts{
+  text-align: center;
+  color: white;
+  background: black;
+  font-size: 20px;
+  border-radius: 5px;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 25px;
+}
+
+.control{
+  margin:0 auto;
+  width: 200px;
+  text-align: center;
+  border: 5px solid white;
+  border-radius: 10px;
+}
+
+.play{
+  margin-right: 40px;
+  margin-top:5px;
+}
+
+.pause {
+}
+
+.foot{
+  margin-top: 20px;
+  color: white;
+  text-align: center;
+}
+
+.foot a{
+  margin-top: 20px;
+  color: #ed1c24;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+.back{
+  z-index: -1;
+  position: absolute;
+  width: 300px;
+  top: 50px;
+  margin:0 auto;
+  right:0;
+  left:0;
+}
+
+h1{
+  text-align: center;
+  margin-top:110px;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.time {
+  margin: 0 auto;
+  width: 220px;
+  background: green;
+  height: 25px;
+  border-radius: 10px;
+  border: 5px solid white
+}
+
+.fill {
+  width: 0px;
+  height: 25px;
+  background: black;
+}
+
+.what{
+  text-align: center;
+  width: 250px;
+  margin:0 auto;
+  top:157px;
+  right:0;
+  left:0;
+  font-size: 20px;
+}
+
+.descr{
+  text-align: center;
+  font-size: 15px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.inputswrap{
+  margin-top: 5px;
+  margin-bottom: 60px;
+}
+
+.puts{
+  text-align: center;
+  font-size: 15px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  width:150px;
+  height: 15px;
+}
+
+.control{
+  margin:0 auto;
+  width: 200px;
+  text-align: center;
+  border: 5px solid white;
+  border-radius: 10px;
+}
+
+.play{
+  margin-right: 40px;
+  margin-top:5px;
+}
+
+.pause {
+}
+  
+}
